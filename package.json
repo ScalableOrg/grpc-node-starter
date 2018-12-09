@@ -1,0 +1,40 @@
+{
+  "name": "grpc-node-starter",
+  "version": "1.0.0",
+  "description": "sample starter project for working with grpc",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --forceExit --coverage --verbose --detectOpenHandles --colors",
+    "build": "tsc -w",
+    "start-server": "nodemon dist/server/index.js",
+    "start-client": "nodemon dist/client/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpesanyaAdebayo/grpc-node-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OpesanyaAdebayo/grpc-node-starter/issues"
+  },
+  "homepage": "https://github.com/OpesanyaAdebayo/grpc-node-starter#readme",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.3.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "grpc": "^1.16.1",
+    "grpc-caller": "^0.11.0",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.0",
+    "@types/express": "^4.16.0",
+    "@types/jest": "^23.3.9",
+    "@types/node": "^10.12.10",
+    "jest": "^23.6.0"
+  }
+}
