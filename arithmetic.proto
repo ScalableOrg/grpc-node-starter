@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package testProj;
+
+service Arithmetic {
+    rpc addNumbers(addNumbersReq) returns (res);
+}
+
+message res {
+  optional string data = 10;
+  optional string error = 20;
+}
+
+message addNumbersReq  {
+    required int32 first = 10;
+    required int32 second = 20;
+}
